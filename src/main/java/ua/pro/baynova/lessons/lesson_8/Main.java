@@ -7,9 +7,9 @@ public class Main {
         Book book2 = new Book ("Мастер и Маргарита", "Михаил Булгаков", 1967);
         Book book3 = new Book ("Преступление и наказание", "Фёдор Достоевский", 1866);
 
-        System.out.println(book1.title + " - " + book1.author + " (" + book1.year + ")");
-        System.out.println(book2.title + " - " + book2.author + " (" + book2.year + ")");
-        System.out.println(book3.title + " - " + book3.author + " (" + book3.year + ")");
+        book1.printInfo();
+        book2.printInfo();
+        book3.printInfo();
 
     }
 }

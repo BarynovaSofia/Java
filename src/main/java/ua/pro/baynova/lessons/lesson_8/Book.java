@@ -11,4 +11,8 @@ public class Book {
         this.author = author;
         this.year = year;
     }
+
+    public void printInfo(){
+        System.out.println(title + " - " + author + " (" + year + ")");
+    }
 }
