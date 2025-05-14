@@ -9,6 +9,24 @@ class ArraySorterTest {
     ArraySorter sorter = new ArraySorter();
 
     @Test
+    void testEmptyArray(){
+
+        int[] input = new int[] {};
+        int[] extend = new int[] {};
+
+        assertArrayEquals(extend, sorter.sortArray(input));
+    }
+
+    @Test
+    void testArrayWithSameValues(){
+
+        int[] input = new int[] {5, 5, 5, 5};
+        int[] extend = new int[] {5, 5, 5, 5};
+
+        assertArrayEquals(extend, sorter.sortArray(input));
+    }
+
+    @Test
     void testSortArray(){
 
         int[] input = {5, 1, 4, 2, 3};
@@ -35,5 +53,8 @@ class ArraySorterTest {
         assertArrayEquals(extend, sorter.sortArray(input));
     }
 
-
+    @Test
+    void testNullArray(){
+        assertThrows(NullPointerException.class, () -> sorter.sortArray(null));
+    }
 }
