@@ -68,4 +68,11 @@ class OrderHistoryTest {
 
         assertThrows(IllegalArgumentException.class, () -> history.addOrder(null));
     }
+
+    @Test
+    void testAddShortOrderNameThrowsException(){
+        OrderHistory history = new OrderHistory();
+
+        assertThrows(IllegalArgumentException.class, () -> history.addOrder("TV"));
+    }
 }

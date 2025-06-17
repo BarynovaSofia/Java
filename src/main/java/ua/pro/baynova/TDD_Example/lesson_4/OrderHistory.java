@@ -10,6 +10,9 @@ public class OrderHistory {
         if(orderName == null){
             throw new IllegalArgumentException("Order name cannot be null");
         }
+        if (orderName.length() < 3){
+            throw new IllegalArgumentException("Order name must be at least 3 characters long");
+        }
         orders.add(orderName);
     }
 
