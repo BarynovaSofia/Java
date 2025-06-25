@@ -2,26 +2,32 @@ package ua.pro.baynova.ThreadsExample.lesson_3;
 
 import org.junit.jupiter.api.RepeatedTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CoffeeCounterAtomicTest {
 
     @RepeatedTest(5)
-    void counterShouldBeExactly2000WithAtomicInteger() throws InterruptedException{
-        CoffeeCounterAtomic coffeeCounterAtomic = new CoffeeCounterAtomic();
+    void shouldHandle10ThreadsCorrectly() throws InterruptedException {
+        CoffeeCounterAtomic counter = new CoffeeCounterAtomic();
 
-        Thread barista1 = new Thread(new BaristaTaskAtomic(coffeeCounterAtomic));
-        Thread barista2 = new Thread(new BaristaTaskAtomic(coffeeCounterAtomic));
+        int numberOfThreads = 10;
+        Thread[] threads = new Thread[numberOfThreads];
 
-        barista1.start();
-        barista2.start();
+        for (int i = 0; i < numberOfThreads; i++) {
+            threads[i] = new Thread(new BaristaTaskAtomic(counter));
+        }
 
-        barista1.join();
-        barista2.join();
+        for (Thread thread : threads) {
+            thread.start();
+        }
 
-        int result = coffeeCounterAtomic.getCounter();
-        System.out.println("Результат (Atomic): " + result);
-        assertEquals(2000, result);
+        for (Thread thread : threads) {
+            thread.join();
+        }
+
+        int result = counter.getCounter();
+        System.out.println("Результат с 10 потоками: " + result);
+
+        assertEquals(10000, result);
     }
-
 }
