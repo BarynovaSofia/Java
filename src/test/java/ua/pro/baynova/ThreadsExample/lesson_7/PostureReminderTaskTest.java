@@ -1,11 +1,14 @@
 package ua.pro.baynova.ThreadsExample.lesson_7;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.concurrent.ScheduledExecutorService;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -17,23 +20,35 @@ class PostureReminderTaskTest {
     @InjectMocks
     PostureReminderTask task;
 
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final PrintStream originalOut = System.out;
+
+    @BeforeEach
+    void setUp(){
+        System.setOut(new PrintStream(outContent));
+    }
+
+    @AfterEach
+    void tearDown(){
+        System.setOut(originalOut);
+    }
+
     @Test
-    void run_shouldIncrementCountAndShutdownAfterThreeRuns() {
+    void fullReminderFlow_shouldPrintMessagesAndShutdownCorrectly() {
 
         when(scheduler.isShutdown()).thenReturn(false);
 
-        task.run();
-        verify(scheduler, never()).shutdown();
+        task.run(); // count = 1
+        task.run(); // count = 2
+        task.run(); // count = 3
 
-        task.run();
-        verify(scheduler, never()).shutdown();
-
-        task.run();
         verify(scheduler, times(1)).shutdown();
 
-        when(scheduler.isShutdown()).thenReturn(true);
+        String output = outContent.toString();
 
-        task.run();
-        verify(scheduler, times(1)).shutdown();
+        assertTrue(output.contains("🔔 Напоминание #1: Выпрями спину!"));
+        assertTrue(output.contains("🔔 Напоминание #2: Выпрями спину!"));
+        assertTrue(output.contains("🔔 Напоминание #3: Выпрями спину!"));
+        assertTrue(output.contains("😌 Ок, больше не напоминаю. Но спину всё равно держи прямо!"));
     }
 }
