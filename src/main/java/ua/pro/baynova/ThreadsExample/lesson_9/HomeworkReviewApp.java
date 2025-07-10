@@ -12,12 +12,14 @@ public class HomeworkReviewApp {
     public static void runHomeworkCheck() {
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
+        Sleeper realSleeper = millis -> Thread.sleep(millis);
+
         List<Callable<Void>> tasks = Arrays.asList(
-                new HomeworkCheckTask("Аня", 2),
-                new HomeworkCheckTask("Игорь", 2),
-                new HomeworkCheckTask("Лена", 5),
-                new HomeworkCheckTask("Олег", 5),
-                new HomeworkCheckTask("Таня", 4)
+                new HomeworkCheckTask("Аня", 2, realSleeper),
+                new HomeworkCheckTask("Игорь", 2, realSleeper),
+                new HomeworkCheckTask("Лена", 5, realSleeper),
+                new HomeworkCheckTask("Олег", 5, realSleeper),
+                new HomeworkCheckTask("Таня", 4, realSleeper)
         );
 
         System.out.println("📘 Даём 6 секунд на проверку заданий...");
