@@ -1,0 +1,35 @@
+## Шпаргалка по BlockingQueue в Java
+
+Этот документ поможет вспомнить, какие BlockingQueue бывают, когда их использовать и как их объявлять в коде.
+
+| Очередь                   | Перевод               | Когда использовать                                 | Как создать                                 |
+| ------------------------- | --------------------- | -------------------------------------------------- | ------------------------------------------- |
+| **ArrayBlockingQueue**    | Фиксированная очередь | Если нужен чёткий лимит на задачи                  | `new ArrayBlockingQueue<>(10)`              |
+| **LinkedBlockingQueue**   | Динамическая очередь  | Когда не знаешь, сколько будет задач               | `new LinkedBlockingQueue<>()`               |
+| **PriorityBlockingQueue** | С приоритетами        | Когда важен порядок согласно срочности             | `new PriorityBlockingQueue<>()`             |
+| **DelayQueue**            | С задержкой           | Если задача должна запуститься только спустя время | `new DelayQueue<>()` + `implements Delayed` |
+| **SynchronousQueue**      | Рука в руку           | Когда каждой продюсер ждёт прямого потребителя     | `new SynchronousQueue<>()`                  |
+
+---
+
+## Общая схема использования:
+
+```java
+BlockingQueue<Тип> queue = new SomeBlockingQueue<>();
+
+executor.submit(new Producer(queue));
+executor.submit(new Consumer(queue));
+```
+
+* `producer.put(...)`
+* `consumer.take()`
+
+---
+
+## Ассоциации для памяти:
+
+* **Array** = ограничение, как полка в пекарне
+* **Linked** = гибко, много связей
+* **Priority** = кто более срочный, того первее
+* **Delay** = ожидаем пуск через таймер
+* **Synchronous** = рука в руку, обмен один на один
