@@ -14,3 +14,4 @@ public class FactoryLoggerExample {
         executor.shutdown();
     }
 }
+
