@@ -28,3 +28,19 @@ java.io.IOException: База недоступна!
 	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProcessor.process(OrderProcessor.java:21)
 	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.WarehouseAppMain.main(WarehouseAppMain.java:17)
 
+серп. 03, 2025 2:38:27 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer run
+SEVERE: Ошибка обработки: Ошибка при обработке заказа: Order{id=7, customer='Client#7', amount=840.0}
+java.lang.RuntimeException: Ошибка при обработке заказа: Order{id=7, customer='Client#7', amount=840.0}
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer.run(OrderConsumer.java:26)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+серп. 03, 2025 2:49:47 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer run
+SEVERE: Ошибка обработки: Ошибка при обработке заказа: Order{id=1, customer='Client#1', amount=120.0}
+java.lang.RuntimeException: Ошибка при обработке заказа: Order{id=1, customer='Client#1', amount=120.0}
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer.run(OrderConsumer.java:26)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
