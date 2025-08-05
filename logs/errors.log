@@ -44,3 +44,13 @@ java.lang.RuntimeException: Ошибка при обработке заказа:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
+серп. 04, 2025 2:08:27 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer run
+SEVERE: Ошибка обработки: Ошибка при обработке заказа: Order{id=2, customer='Client#2', amount=240.0}
+java.lang.RuntimeException: Ошибка при обработке заказа: Order{id=2, customer='Client#2', amount=240.0}
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer.run(OrderConsumer.java:26)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+

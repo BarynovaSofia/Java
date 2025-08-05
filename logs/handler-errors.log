@@ -1,0 +1,2 @@
+серп. 05, 2025 4:33:04 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_6.RequestHandler handle
+SEVERE: Сбой при обработке: Ошибка обработки заявки: ID делится на 9 -> Request{id=54, data='ClientData54'}

@@ -36,3 +36,49 @@ INFO: Время вышло. Останавливаем приложение...
 WARNING: Производство заказов остановлено
 серп. 03, 2025 2:49:56 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProcessingApp start
 INFO: Приложение завершено
+серп. 04, 2025 2:08:24 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProcessingApp start
+INFO: OrderProcessingApp запущено
+серп. 04, 2025 2:08:25 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer run
+INFO: Обрабатываю заказ: Order{id=1, customer='Client#1', amount=120.0}
+серп. 04, 2025 2:08:25 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=1, customer='Client#1', amount=120.0}
+серп. 04, 2025 2:08:26 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=2, customer='Client#2', amount=240.0}
+серп. 04, 2025 2:08:27 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer run
+INFO: Заказ успешно обработан: Order{id=1, customer='Client#1', amount=120.0}
+серп. 04, 2025 2:08:27 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer run
+INFO: Обрабатываю заказ: Order{id=2, customer='Client#2', amount=240.0}
+серп. 04, 2025 2:08:27 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer run
+SEVERE: Ошибка обработки: Ошибка при обработке заказа: Order{id=2, customer='Client#2', amount=240.0}
+java.lang.RuntimeException: Ошибка при обработке заказа: Order{id=2, customer='Client#2', amount=240.0}
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderConsumer.run(OrderConsumer.java:26)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+серп. 04, 2025 2:08:27 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=3, customer='Client#3', amount=360.0}
+серп. 04, 2025 2:08:28 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=4, customer='Client#4', amount=480.0}
+серп. 04, 2025 2:08:29 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=5, customer='Client#5', amount=600.0}
+серп. 04, 2025 2:08:30 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=6, customer='Client#6', amount=720.0}
+серп. 04, 2025 2:08:31 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=7, customer='Client#7', amount=840.0}
+серп. 04, 2025 2:08:32 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=8, customer='Client#8', amount=960.0}
+серп. 04, 2025 2:08:33 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=9, customer='Client#9', amount=1080.0}
+серп. 04, 2025 2:08:34 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+INFO: Создан заказ: Order{id=10, customer='Client#10', amount=1200.0}
+серп. 04, 2025 2:08:34 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProcessingApp lambda$start$0
+INFO: Время вышло. Останавливаем приложение...
+серп. 04, 2025 2:08:34 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProducer run
+WARNING: Производство заказов остановлено
+серп. 04, 2025 2:08:34 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_5.OrderProcessingApp start
+INFO: Приложение завершено
+серп. 05, 2025 4:33:04 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_6.RequestProducer produce
+INFO: Создана заявка: Request{id=54, data='ClientData54'}
