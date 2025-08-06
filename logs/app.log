@@ -82,3 +82,27 @@ WARNING: Производство заказов остановлено
 INFO: Приложение завершено
 серп. 05, 2025 4:33:04 ПП ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_6.RequestProducer produce
 INFO: Создана заявка: Request{id=54, data='ClientData54'}
+21:00:56.677 [pool-1-thread-1] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван отправил на печать: Document: 'Report_588', From: Иван, Pages: 10
+21:00:56.696 [pool-1-thread-3] INFO  u.p.b.T.l.L.part_7.SLF4J.Printer - Печатаем: {}Document: 'Report_801', From: Ольга, Pages: 10
+21:00:56.677 [pool-1-thread-2] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга отправил на печать: Document: 'Report_801', From: Ольга, Pages: 10
+21:00:58.683 [pool-1-thread-2] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга отправил на печать: Document: 'Report_397', From: Ольга, Pages: 7
+21:00:59.406 [pool-1-thread-1] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван отправил на печать: Document: 'Report_144', From: Иван, Pages: 3
+21:01:00.317 [pool-1-thread-2] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга отправил на печать: Document: 'Report_582', From: Ольга, Pages: 1
+21:01:00.459 [pool-1-thread-1] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван отправил на печать: Document: 'Report_477', From: Иван, Pages: 2
+21:01:01.555 [pool-1-thread-2] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга отправил на печать: Document: 'Report_417', From: Ольга, Pages: 8
+21:01:01.701 [pool-1-thread-3] INFO  u.p.b.T.l.L.part_7.SLF4J.Printer - Задание выполнено: {}Document: 'Report_801', From: Ольга, Pages: 10
+21:01:01.703 [pool-1-thread-3] INFO  u.p.b.T.l.L.part_7.SLF4J.Printer - Печатаем: {}Document: 'Report_588', From: Иван, Pages: 10
+21:01:02.296 [pool-1-thread-1] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван отправил на печать: Document: 'Report_194', From: Иван, Pages: 1
+21:01:03.912 [pool-1-thread-2] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга отправил на печать: Document: 'Report_961', From: Ольга, Pages: 3
+21:01:04.787 [pool-1-thread-1] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван отправил на печать: Document: 'Report_931', From: Иван, Pages: 10
+21:01:05.747 [pool-1-thread-2] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга отправил на печать: Document: 'Report_765', From: Ольга, Pages: 8
+21:01:06.704 [pool-1-thread-3] INFO  u.p.b.T.l.L.part_7.SLF4J.Printer - Задание выполнено: {}Document: 'Report_588', From: Иван, Pages: 10
+21:01:06.704 [pool-1-thread-3] INFO  u.p.b.T.l.L.part_7.SLF4J.Printer - Печатаем: {}Document: 'Report_397', From: Ольга, Pages: 7
+21:01:07.452 [pool-1-thread-1] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван отправил на печать: Document: 'Report_939', From: Иван, Pages: 7
+21:01:07.954 [pool-1-thread-2] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга отправил на печать: Document: 'Report_836', From: Ольга, Pages: 1
+21:01:10.206 [pool-1-thread-3] INFO  u.p.b.T.l.L.part_7.SLF4J.Printer - Задание выполнено: {}Document: 'Report_397', From: Ольга, Pages: 7
+21:01:10.206 [pool-1-thread-3] INFO  u.p.b.T.l.L.part_7.SLF4J.Printer - Печатаем: {}Document: 'Report_144', From: Иван, Pages: 3
+21:01:10.206 [pool-1-thread-1] INFO  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван отправил на печать: Document: 'Report_688', From: Иван, Pages: 10
+21:01:11.682 [pool-1-thread-3] WARN  u.p.b.T.l.L.part_7.SLF4J.Printer - Принтер завершает работу (прерван)
+21:01:11.682 [pool-1-thread-1] WARN  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван завершает работу (прерван)
+21:01:11.682 [pool-1-thread-2] WARN  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга завершает работу (прерван)

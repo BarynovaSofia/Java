@@ -54,3 +54,6 @@ java.lang.RuntimeException: Ошибка при обработке заказа:
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
+2025-08-06 21:01:11 WARN  u.p.b.T.l.L.part_7.SLF4J.Printer - Принтер завершает работу (прерван)
+2025-08-06 21:01:11 WARN  u.p.b.T.l.L.part_7.SLF4J.Employee - Иван завершает работу (прерван)
+2025-08-06 21:01:11 WARN  u.p.b.T.l.L.part_7.SLF4J.Employee - Ольга завершает работу (прерван)
