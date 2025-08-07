@@ -1,0 +1,2 @@
+2025-08-07 17:32:40 [main] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.logback_xml.test_class.LogbackSimpleTest - Привет! Это INFO лог.
+2025-08-07 17:32:40 [main] ERROR ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.logback_xml.test_class.LogbackSimpleTest - Вот это ERROR лог!
