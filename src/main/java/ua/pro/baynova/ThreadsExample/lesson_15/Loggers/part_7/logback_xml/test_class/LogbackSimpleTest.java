@@ -12,3 +12,4 @@ public class LogbackSimpleTest {
         logger.error("Вот это ERROR лог!");
     }
 }
+

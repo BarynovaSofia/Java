@@ -1,0 +1,2 @@
+17:53:29.518 [main] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.logback_xml.test_class.LogbackSimpleTest - Привет! Это INFO лог.
+17:53:29.535 [main] ERROR ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.logback_xml.test_class.LogbackSimpleTest - Вот это ERROR лог!
