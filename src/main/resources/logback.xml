@@ -1,39 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-
-    <!-- Параметры -->
     <property name="LOG_PATH" value="logs"/>
     <property name="LOG_FILE_NAME" value="mdc-demo.log"/>
 
-    <!-- Консольный вывод с цветами -->
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <!-- %highlight добавляет цвет в зависимости от уровня лога -->
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %highlight(%X{requestId}) %cyan(%logger{}) - %msg%n</pattern>
-        </encoder>
-    </appender>
-
-    <!-- Логи в файл с ротацией -->
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${LOG_FILE_NAME}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <!-- Раз в день новый лог, старые архивируются -->
-            <fileNamePattern>${LOG_PATH}/${LOG_FILE_NAME}.%d{yyyy-MM-dd}.gz</fileNamePattern>
-            <maxHistory>7</maxHistory>
+            <fileNamePattern>${LOG_PATH}/${LOG_FILE_NAME}.%d{yyyy-MM-dd}</fileNamePattern>
+            <maxHistory>4</maxHistory>
         </rollingPolicy>
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %X{requestId} %logger{36} - %msg%n</pattern>
+            <!-- Добавили requestId и userId -->
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS}%n
+                [thread=%thread]%n
+                [req=%X{requestId}]%n
+                [user=%X{userId}]%n
+                %-5level%n
+                %logger{36} - %msg%n
+            </pattern>
         </encoder>
     </appender>
 
-    <!-- Логгер -->
-    <root level="debug">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS}
+                %highlight([thread=%thread])
+                %cyan([req=%X{requestId}])
+                %magenta([user=%X{userId}])
+                %highlight(%-5level)
+                %green(%logger{36}) - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
         <appender-ref ref="CONSOLE"/>
-        <appender-ref ref="FILE"/>
+        <appender-ref ref="ROLLING_FILE"/>
     </root>
 </configuration>
-
-
 
         <!-- С ротацией ,но без MDC -->
 <!--<configuration>-->

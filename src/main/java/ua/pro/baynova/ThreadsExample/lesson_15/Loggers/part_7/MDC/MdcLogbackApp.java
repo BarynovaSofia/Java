@@ -7,9 +7,10 @@ public class MdcLogbackApp {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
-        for (int i = 1; i <= 3; i++) {
-            executor.submit(new MdcWorker(i));
-        }
-        executor.shutdownNow();
+       executor.submit(new TaskProcessor("USER-101"));
+       executor.submit(new TaskProcessor("USER-202"));
+       executor.submit(new TaskProcessor("USER-303"));
+
+       executor.shutdown();
     }
 }

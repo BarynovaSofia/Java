@@ -1,36 +1,198 @@
-2025-08-09 11:49:44.991 [pool-1-thread-1] INFO  REQ-ef98cd85-5c4b-4724-bf30-2e7886552af3 u.p.b.T.l.L.part_7.MDC.MdcWorker - Начало обработки задачи №1
-2025-08-09 11:49:44.991 [pool-1-thread-3] INFO  REQ-d93afe9d-015d-416f-be1a-884079fe73f8 u.p.b.T.l.L.part_7.MDC.MdcWorker - Начало обработки задачи №3
-2025-08-09 11:49:44.991 [pool-1-thread-2] INFO  REQ-c8d686d6-9eac-4fbd-aebf-7a5d015e9bab u.p.b.T.l.L.part_7.MDC.MdcWorker - Начало обработки задачи №2
-2025-08-09 11:49:44.996 [pool-1-thread-2] ERROR REQ-c8d686d6-9eac-4fbd-aebf-7a5d015e9bab u.p.b.T.l.L.part_7.MDC.MdcWorker - Ошибка в задаче №2
-java.lang.InterruptedException: sleep interrupted
-	at java.base/java.lang.Thread.sleep0(Native Method)
-	at java.base/java.lang.Thread.sleep(Thread.java:509)
-	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.MDC.MdcWorker.run(MdcWorker.java:25)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-09 11:49:44.996 [pool-1-thread-3] ERROR REQ-d93afe9d-015d-416f-be1a-884079fe73f8 u.p.b.T.l.L.part_7.MDC.MdcWorker - Ошибка в задаче №3
-java.lang.InterruptedException: sleep interrupted
-	at java.base/java.lang.Thread.sleep0(Native Method)
-	at java.base/java.lang.Thread.sleep(Thread.java:509)
-	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.MDC.MdcWorker.run(MdcWorker.java:25)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-09 11:49:44.996 [pool-1-thread-1] ERROR REQ-ef98cd85-5c4b-4724-bf30-2e7886552af3 u.p.b.T.l.L.part_7.MDC.MdcWorker - Ошибка в задаче №1
-java.lang.InterruptedException: sleep interrupted
-	at java.base/java.lang.Thread.sleep0(Native Method)
-	at java.base/java.lang.Thread.sleep(Thread.java:509)
-	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.MDC.MdcWorker.run(MdcWorker.java:25)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-08-09 11:49:45.002 [pool-1-thread-2] INFO  REQ-c8d686d6-9eac-4fbd-aebf-7a5d015e9bab u.p.b.T.l.L.part_7.MDC.MdcWorker - Завершение обработки задачи №2
-2025-08-09 11:49:45.002 [pool-1-thread-1] INFO  REQ-ef98cd85-5c4b-4724-bf30-2e7886552af3 u.p.b.T.l.L.part_7.MDC.MdcWorker - Завершение обработки задачи №1
-2025-08-09 11:49:45.002 [pool-1-thread-3] INFO  REQ-d93afe9d-015d-416f-be1a-884079fe73f8 u.p.b.T.l.L.part_7.MDC.MdcWorker - Завершение обработки задачи №3
+2025-08-10 14:05:54.826
+
+                [thread=pool-1-thread-1]
+
+                [req=REQ-2ebc7cf4-139d-4fd8-b8df-8494980e32e5]
+
+                [user=USER-101]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:54.826
+
+                [thread=pool-1-thread-2]
+
+                [req=REQ-fc1ebddb-fd11-499a-ab37-0f54a3b02890]
+
+                [user=USER-202]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:54.826
+
+                [thread=pool-1-thread-3]
+
+                [req=REQ-54186c60-fba9-4d13-a590-e30a077a3703]
+
+                [user=USER-303]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:55.095
+
+                [thread=pool-1-thread-2]
+
+                [req=REQ-fc1ebddb-fd11-499a-ab37-0f54a3b02890]
+
+                [user=USER-202]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:55.154
+
+                [thread=pool-1-thread-1]
+
+                [req=REQ-2ebc7cf4-139d-4fd8-b8df-8494980e32e5]
+
+                [user=USER-101]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:55.464
+
+                [thread=pool-1-thread-3]
+
+                [req=REQ-54186c60-fba9-4d13-a590-e30a077a3703]
+
+                [user=USER-303]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:55.602
+
+                [thread=pool-1-thread-1]
+
+                [req=REQ-2ebc7cf4-139d-4fd8-b8df-8494980e32e5]
+
+                [user=USER-101]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:55.642
+
+                [thread=pool-1-thread-2]
+
+                [req=REQ-fc1ebddb-fd11-499a-ab37-0f54a3b02890]
+
+                [user=USER-202]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:05:56.371
+
+                [thread=pool-1-thread-3]
+
+                [req=REQ-54186c60-fba9-4d13-a590-e30a077a3703]
+
+                [user=USER-303]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:30.826
+
+                [thread=pool-1-thread-1]
+
+                [req=REQ-33c474a5-e6b6-40f0-8980-821e6b873eb7]
+
+                [user=USER-101]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:30.826
+
+                [thread=pool-1-thread-3]
+
+                [req=REQ-68fbeac4-1847-4a56-b9ee-968382aa426d]
+
+                [user=USER-303]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:30.826
+
+                [thread=pool-1-thread-2]
+
+                [req=REQ-b5415da3-4e93-4145-8e7e-ed5aefae5326]
+
+                [user=USER-202]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:31.148
+
+                [thread=pool-1-thread-2]
+
+                [req=REQ-b5415da3-4e93-4145-8e7e-ed5aefae5326]
+
+                [user=USER-202]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:31.181
+
+                [thread=pool-1-thread-3]
+
+                [req=REQ-68fbeac4-1847-4a56-b9ee-968382aa426d]
+
+                [user=USER-303]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:31.307
+
+                [thread=pool-1-thread-1]
+
+                [req=REQ-33c474a5-e6b6-40f0-8980-821e6b873eb7]
+
+                [user=USER-101]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:31.430
+
+                [thread=pool-1-thread-1]
+
+                [req=REQ-33c474a5-e6b6-40f0-8980-821e6b873eb7]
+
+                [user=USER-101]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:31.759
+
+                [thread=pool-1-thread-2]
+
+                [req=REQ-b5415da3-4e93-4145-8e7e-ed5aefae5326]
+
+                [user=USER-202]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-10 14:07:31.799
+
+                [thread=pool-1-thread-3]
+
+                [req=REQ-68fbeac4-1847-4a56-b9ee-968382aa426d]
+
+                [user=USER-303]
+
+                INFO 
+
+                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
