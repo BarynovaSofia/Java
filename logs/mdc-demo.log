@@ -1,198 +1,26 @@
-2025-08-10 14:05:54.826
-
-                [thread=pool-1-thread-1]
-
-                [req=REQ-2ebc7cf4-139d-4fd8-b8df-8494980e32e5]
-
-                [user=USER-101]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:54.826
-
-                [thread=pool-1-thread-2]
-
-                [req=REQ-fc1ebddb-fd11-499a-ab37-0f54a3b02890]
-
-                [user=USER-202]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:54.826
-
-                [thread=pool-1-thread-3]
-
-                [req=REQ-54186c60-fba9-4d13-a590-e30a077a3703]
-
-                [user=USER-303]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:55.095
-
-                [thread=pool-1-thread-2]
-
-                [req=REQ-fc1ebddb-fd11-499a-ab37-0f54a3b02890]
-
-                [user=USER-202]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:55.154
-
-                [thread=pool-1-thread-1]
-
-                [req=REQ-2ebc7cf4-139d-4fd8-b8df-8494980e32e5]
-
-                [user=USER-101]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:55.464
-
-                [thread=pool-1-thread-3]
-
-                [req=REQ-54186c60-fba9-4d13-a590-e30a077a3703]
-
-                [user=USER-303]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:55.602
-
-                [thread=pool-1-thread-1]
-
-                [req=REQ-2ebc7cf4-139d-4fd8-b8df-8494980e32e5]
-
-                [user=USER-101]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:55.642
-
-                [thread=pool-1-thread-2]
-
-                [req=REQ-fc1ebddb-fd11-499a-ab37-0f54a3b02890]
-
-                [user=USER-202]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:05:56.371
-
-                [thread=pool-1-thread-3]
-
-                [req=REQ-54186c60-fba9-4d13-a590-e30a077a3703]
-
-                [user=USER-303]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:30.826
-
-                [thread=pool-1-thread-1]
-
-                [req=REQ-33c474a5-e6b6-40f0-8980-821e6b873eb7]
-
-                [user=USER-101]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:30.826
-
-                [thread=pool-1-thread-3]
-
-                [req=REQ-68fbeac4-1847-4a56-b9ee-968382aa426d]
-
-                [user=USER-303]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:30.826
-
-                [thread=pool-1-thread-2]
-
-                [req=REQ-b5415da3-4e93-4145-8e7e-ed5aefae5326]
-
-                [user=USER-202]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:31.148
-
-                [thread=pool-1-thread-2]
-
-                [req=REQ-b5415da3-4e93-4145-8e7e-ed5aefae5326]
-
-                [user=USER-202]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:31.181
-
-                [thread=pool-1-thread-3]
-
-                [req=REQ-68fbeac4-1847-4a56-b9ee-968382aa426d]
-
-                [user=USER-303]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:31.307
-
-                [thread=pool-1-thread-1]
-
-                [req=REQ-33c474a5-e6b6-40f0-8980-821e6b873eb7]
-
-                [user=USER-101]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:31.430
-
-                [thread=pool-1-thread-1]
-
-                [req=REQ-33c474a5-e6b6-40f0-8980-821e6b873eb7]
-
-                [user=USER-101]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:31.759
-
-                [thread=pool-1-thread-2]
-
-                [req=REQ-b5415da3-4e93-4145-8e7e-ed5aefae5326]
-
-                [user=USER-202]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
-2025-08-10 14:07:31.799
-
-                [thread=pool-1-thread-3]
-
-                [req=REQ-68fbeac4-1847-4a56-b9ee-968382aa426d]
-
-                [user=USER-303]
-
-                INFO 
-
-                u.p.b.T.l.L.part_7.MDC.TaskProcessor - 
+2025-08-12 21:38:19.065 [thread=pool-1-thread-1] [req=REQ-1] [user=USER-101] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:38:19.065 [thread=pool-1-thread-2] [req=REQ-2] [user=USER-102] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:38:19.065 [thread=pool-1-thread-3] [req=REQ-3] [user=USER-103] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:38:19.763 [thread=pool-1-thread-3] [req=REQ-3] [user=USER-103] WARN  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обнаружено подозрительное поведение
+2025-08-12 21:38:20.963 [thread=pool-1-thread-2] [req=REQ-2] [user=USER-102] WARN  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обнаружено подозрительное поведение
+2025-08-12 21:38:21.044 [thread=pool-1-thread-3] [req=REQ-3] [user=USER-103] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:38:21.045 [thread=pool-1-thread-3] [req=REQ-4] [user=USER-104] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:38:21.200 [thread=pool-1-thread-1] [req=REQ-1] [user=USER-101] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:38:21.200 [thread=pool-1-thread-1] [req=REQ-5] [user=USER-105] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:38:21.944 [thread=pool-1-thread-2] [req=REQ-2] [user=USER-102] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:38:23.504 [thread=pool-1-thread-3] [req=REQ-4] [user=USER-104] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:38:23.591 [thread=pool-1-thread-1] [req=REQ-5] [user=USER-105] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:55:06.132 [thread=pool-1-thread-1] [req=REQ-1] [user=USER-101] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:55:06.132 [thread=pool-1-thread-3] [req=REQ-3] [user=USER-103] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:55:06.132 [thread=pool-1-thread-2] [req=REQ-2] [user=USER-102] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:55:06.976 [thread=pool-1-thread-2] [req=REQ-2] [user=USER-102] WARN  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обнаружено подозрительное поведение
+2025-08-12 21:55:07.347 [thread=pool-1-thread-3] [req=REQ-3] [user=USER-103] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:55:07.349 [thread=pool-1-thread-3] [req=REQ-4] [user=USER-104] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:55:08.054 [thread=pool-1-thread-1] [req=REQ-1] [user=USER-101] WARN  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обнаружено подозрительное поведение
+2025-08-12 21:55:08.430 [thread=pool-1-thread-2] [req=REQ-2] [user=USER-102] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:55:08.430 [thread=pool-1-thread-2] [req=REQ-5] [user=USER-105] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Начало обработки запроса
+2025-08-12 21:55:09.131 [thread=pool-1-thread-3] [req=REQ-4] [user=USER-104] WARN  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обнаружено подозрительное поведение
+2025-08-12 21:55:09.360 [thread=pool-1-thread-1] [req=REQ-1] [user=USER-101] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:55:09.650 [thread=pool-1-thread-2] [req=REQ-5] [user=USER-105] WARN  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обнаружено подозрительное поведение
+2025-08-12 21:55:11.079 [thread=pool-1-thread-3] [req=REQ-4] [user=USER-104] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
+2025-08-12 21:55:11.480 [thread=pool-1-thread-2] [req=REQ-5] [user=USER-105] INFO  ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_7.Log4j2.RequestProcessor - Обработка запроса завершена
