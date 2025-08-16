@@ -1,0 +1,139 @@
+[2025-08-16 19:57:11] [main] INFO   ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderService - Запуск обработки 15 заказов
+[2025-08-16 19:57:11] [pool-2-thread-3] INFO  ORD-3 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:11] [pool-2-thread-2] INFO  ORD-2 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:11] [pool-2-thread-1] INFO  ORD-1 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:11] [main] INFO   ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderService - Все заказы отправлены на обработку
+[2025-08-16 19:57:11] [pool-2-thread-2] ERROR ORD-2 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-2
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:57:11] [pool-2-thread-2] INFO  ORD-4 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:11] [pool-2-thread-3] INFO  ORD-3 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-3 успешно обработан
+[2025-08-16 19:57:11] [pool-2-thread-1] INFO  ORD-1 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-1 успешно обработан
+[2025-08-16 19:57:11] [pool-2-thread-3] INFO  ORD-5 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:11] [pool-2-thread-1] INFO  ORD-6 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:11] [pool-2-thread-3] WARN  ORD-5 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-5 слишком большой: 14 товаров
+[2025-08-16 19:57:11] [pool-2-thread-1] WARN  ORD-6 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-6 слишком большой: 14 товаров
+[2025-08-16 19:57:11] [pool-2-thread-1] ERROR ORD-6 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-6
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:57:11] [pool-2-thread-1] INFO  ORD-7 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:11] [pool-2-thread-2] INFO  ORD-4 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-4 успешно обработан
+[2025-08-16 19:57:11] [pool-2-thread-2] INFO  ORD-8 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-3] INFO  ORD-5 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-5 успешно обработан
+[2025-08-16 19:57:12] [pool-2-thread-3] INFO  ORD-9 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-1] INFO  ORD-7 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-7 успешно обработан
+[2025-08-16 19:57:12] [pool-2-thread-1] INFO  ORD-10 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-3] ERROR ORD-9 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-9
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:57:12] [pool-2-thread-3] INFO  ORD-11 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-3] WARN  ORD-11 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-11 слишком большой: 13 товаров
+[2025-08-16 19:57:12] [pool-2-thread-3] ERROR ORD-11 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-11
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:57:12] [pool-2-thread-3] INFO  ORD-12 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-2] INFO  ORD-8 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-8 успешно обработан
+[2025-08-16 19:57:12] [pool-2-thread-2] INFO  ORD-13 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-2] ERROR ORD-13 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-13
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:57:12] [pool-2-thread-2] INFO  ORD-14 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-3] INFO  ORD-12 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-12 успешно обработан
+[2025-08-16 19:57:12] [pool-2-thread-1] INFO  ORD-10 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-10 успешно обработан
+[2025-08-16 19:57:12] [pool-2-thread-3] INFO  ORD-15 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:57:12] [pool-2-thread-3] ERROR ORD-15 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-15
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:57:12] [pool-2-thread-2] INFO  ORD-14 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-14 успешно обработан
+[2025-08-16 19:58:02] [main] INFO   ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderService - Запуск обработки 15 заказов
+[2025-08-16 19:58:02] [pool-2-thread-2] INFO  ORD-2 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:02] [pool-2-thread-1] INFO  ORD-1 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:02] [pool-2-thread-3] INFO  ORD-3 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:02] [main] INFO   ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderService - Все заказы отправлены на обработку
+[2025-08-16 19:58:02] [pool-2-thread-2] ERROR ORD-2 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-2
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:58:02] [pool-2-thread-1] ERROR ORD-1 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-1
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:58:02] [pool-2-thread-2] INFO  ORD-4 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:02] [pool-2-thread-1] INFO  ORD-5 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-3] INFO  ORD-3 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-3 успешно обработан
+[2025-08-16 19:58:03] [pool-2-thread-3] INFO  ORD-6 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-3] WARN  ORD-6 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-6 слишком большой: 14 товаров
+[2025-08-16 19:58:03] [pool-2-thread-1] INFO  ORD-5 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-5 успешно обработан
+[2025-08-16 19:58:03] [pool-2-thread-2] INFO  ORD-4 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-4 успешно обработан
+[2025-08-16 19:58:03] [pool-2-thread-1] INFO  ORD-7 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-2] INFO  ORD-8 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-3] INFO  ORD-6 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-6 успешно обработан
+[2025-08-16 19:58:03] [pool-2-thread-3] INFO  ORD-9 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-2] INFO  ORD-8 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-8 успешно обработан
+[2025-08-16 19:58:03] [pool-2-thread-1] INFO  ORD-7 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-7 успешно обработан
+[2025-08-16 19:58:03] [pool-2-thread-2] INFO  ORD-10 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-1] INFO  ORD-11 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-2] ERROR ORD-10 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-10
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:58:03] [pool-2-thread-2] INFO  ORD-12 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:03] [pool-2-thread-2] WARN  ORD-12 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-12 слишком большой: 11 товаров
+[2025-08-16 19:58:04] [pool-2-thread-3] INFO  ORD-9 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-9 успешно обработан
+[2025-08-16 19:58:04] [pool-2-thread-3] INFO  ORD-13 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:04] [pool-2-thread-2] INFO  ORD-12 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-12 успешно обработан
+[2025-08-16 19:58:04] [pool-2-thread-1] INFO  ORD-11 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-11 успешно обработан
+[2025-08-16 19:58:04] [pool-2-thread-2] INFO  ORD-14 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:04] [pool-2-thread-1] INFO  ORD-15 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Начинаем обработку заказа
+[2025-08-16 19:58:04] [pool-2-thread-1] ERROR ORD-15 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Не удалось обработать заказ ORD-15
+java.lang.RuntimeException: Ошибка оплаты
+	at ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor.run(OrderProcessor.java:31) ~[classes/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[2025-08-16 19:58:04] [pool-2-thread-3] INFO  ORD-13 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-13 успешно обработан
+[2025-08-16 19:58:04] [pool-2-thread-2] INFO  ORD-14 ua.pro.baynova.ThreadsExample.lesson_15.Loggers.part_8.Best_practice.level_Log.OrderProcessor - Заказ ORD-14 успешно обработан

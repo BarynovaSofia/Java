@@ -1,51 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
-    <Properties>
-        <Property name="LOG_PATH">logs</Property>
-        <Property name="LOG_FILE_NAME">mdc-demo.log</Property>
-        <Property name="THREAD">%style{[thread=%t]}{blue}</Property>
-        <Property name="REQ">%style{[req=%X{requestId}]}{cyan}</Property>
-        <Property name="USER">%style{[user=%X{userId}]}{magenta}</Property>
-        <Property name="LEVEL">%highlight{%5p}{FATAL=red blink, ERROR=red, WARN=yellow, INFO=green, DEBUG=cyan, TRACE=white}</Property>
-        <Property name="LOGGER">%style{%c{1.}}{green}</Property>
-    </Properties>
-
     <Appenders>
-        <!-- Консоль с цветами -->
+        <!-- Цветная консоль -->
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout disableAnsi="false" pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} ${THREAD} ${REQ} ${USER} ${LEVEL} ${LOGGER} - %msg%n"/>
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] %highlight{%-5level}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=green, DEBUG=blue} %X{orderId} %logger{36} - %msg%n"
+                           disableAnsi="false"
+                           charset="UTF-8"/>
         </Console>
 
-        <!-- Основной лог -->
-        <RollingFile name="RollingFile" fileName="${LOG_PATH}/${LOG_FILE_NAME}"
-                     filePattern="${LOG_PATH}/${LOG_FILE_NAME}.%d{yyyy-MM-dd}">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [thread=%t] [req=%X{requestId}] [user=%X{userId}] %-5p %c{36} - %msg%n"/>
+        <!-- Файл для INFO -->
+        <RollingFile name="InfoFile" fileName="logs/info.log"
+                     filePattern="logs/info-%d{yyyy-MM-dd}.log.gz">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] %-5level %X{orderId} %logger - %msg%n"/>
             <Policies>
-                <TimeBasedTriggeringPolicy />
+                <TimeBasedTriggeringPolicy interval="1"/>
             </Policies>
+            <Filters>
+                <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
         </RollingFile>
 
-        <!-- Логи многопоточного процессора -->
-        <RollingFile name="MultiThreadFile" fileName="${LOG_PATH}/multi-thread.log"
-                     filePattern="${LOG_PATH}/multi-thread.log.%d{yyyy-MM-dd}">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [thread=%t] [req=%X{requestId}] [user=%X{userId}] %-5p %c{36} - %msg%n"/>
+        <!-- Файл для WARN/ERROR -->
+        <RollingFile name="ErrorFile" fileName="logs/error.log"
+                     filePattern="logs/error-%d{yyyy-MM-dd}.log.gz">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] %-5level %X{orderId} %logger - %msg%n"/>
             <Policies>
-                <TimeBasedTriggeringPolicy />
+                <TimeBasedTriggeringPolicy interval="1"/>
             </Policies>
+            <Filters>
+                <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
         </RollingFile>
     </Appenders>
 
     <Loggers>
-        <!-- Ловим логи именно из RequestProcessor -->
-        <Logger name="ua.pro.baynova.lessons.RequestProcessor" level="info" additivity="false">
+        <Root level="debug">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="MultiThreadFile"/>
-        </Logger>
-
-        <!-- Всё остальное -->
-        <Root level="info">
-            <AppenderRef ref="Console"/>
-            <AppenderRef ref="RollingFile"/>
+            <AppenderRef ref="InfoFile"/>
+            <AppenderRef ref="ErrorFile"/>
         </Root>
     </Loggers>
 </Configuration>
