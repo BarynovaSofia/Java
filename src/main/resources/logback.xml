@@ -1,6 +1,6 @@
 <configuration>
     <property name="LOG_PATH" value="logs"/>
-    <property name="LOG_FILE_NAME" value="mdc-demo.log"/>
+    <property name="LOG_FILE_NAME" value="logCaptor.log"/>
 
     <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${LOG_FILE_NAME}</file>

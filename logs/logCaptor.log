@@ -1,0 +1,22 @@
+2025-08-17 15:38:47.411
+
+                [thread=main]
+
+                [req=]
+
+                [user=]
+
+                INFO 
+
+                u.p.b.T.l.L.p.LogCaptor.OrderService - Order created: 123
+2025-08-17 15:38:47.431
+
+                [thread=main]
+
+                [req=]
+
+                [user=]
+
+                ERROR
+
+                u.p.b.T.l.L.p.LogCaptor.OrderService - Order creation failed: empty
