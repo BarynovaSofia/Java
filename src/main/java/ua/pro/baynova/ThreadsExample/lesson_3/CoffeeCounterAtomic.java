@@ -12,4 +12,4 @@ public class CoffeeCounterAtomic {
     public int getCounter(){
         return counter.get();
     }
-} 
+}
